@@ -14,3 +14,58 @@
     font-weight: 400;
   }
 }
+
+.popup {
+  position: absolute;
+  left: 35%;
+  bottom: 30%;
+  width: 650px;
+  height: 430px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.popup-inner {
+  position: relative;
+  padding-left: 115px;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  .img-popup {
+    position: absolute;
+    left: -30%;
+    bottom: -120%;
+    img {
+      width: 100%;
+      height: 400px;
+    }
+  }
+  .btn-play {
+    height: 35px;
+    background-color: #fc8830;
+    border-radius: 10%;
+    color: white;
+    border: 0;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-close {
+    position: absolute;
+    left: 95%;
+    bottom: 90%;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    i {
+      color: black;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

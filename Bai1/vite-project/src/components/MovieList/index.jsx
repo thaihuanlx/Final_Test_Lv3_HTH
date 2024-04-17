@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import MovieCard from "../MovieCard";
 import "./style.css";
 import axios from "axios";
+
 const MovieList = () => {
   const [data, setData] = useState(null);
 

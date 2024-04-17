@@ -2,8 +2,10 @@ const express = require("express");
 const mongoose = require("mongoose");
 const authRoutes = require("./routes/authRoutes");
 const movieRoutes = require("./routes/movieRoutes");
+const cors = require("cors");
 
 const app = express();
+app.use(cors());
 const uri = `mongodb+srv://hth021000:123admin@cluster0.nnw6adc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 mongoose
   .connect(uri)

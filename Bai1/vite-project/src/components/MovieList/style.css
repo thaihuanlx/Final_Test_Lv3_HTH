@@ -1,0 +1,43 @@
+.movie-list {
+  width: 1000px;
+  height: 600px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #8080804f;
+  height: 50px;
+  padding: 10px 30px;
+  h1 {
+    font-size: 22px;
+    span {
+      font-size: 22px;
+      background: #f16017;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+}
+
+.movie-content {
+  padding: 5px 30px;
+  h2 {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+  }
+}
+
+.list-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+  gap: 20px;
+}
